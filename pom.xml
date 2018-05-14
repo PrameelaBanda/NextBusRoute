@@ -1,6 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/1.0.0 http://maven.apache.org/xsd/maven-1.0.0.xsd">
-  <modelVersion>1.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
   
   <groupId>com.target</groupId>
   <artifactId>nextbusroute</artifactId>
@@ -14,17 +14,18 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 <build>
-        <finalName>nextbusroute</finalName>
-        <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>3.5.3</source>
-                    <target>3.5.3</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<fork>true</fork>
+				</configuration>
+			</plugin>
+		</plugins>
+    </build> 
   <dependencies>
 
 <dependency>
